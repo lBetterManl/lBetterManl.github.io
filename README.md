@@ -1,3 +1,3 @@
-# [lBetterManl](https://github.com/lBetterManl/lBetterManl.github.io)主页网站
+# [lBetterManl](https://lBetterManl.github.io)主页网站
 
-> 访问链接 `https://github.com/lBetterManl/lBetterManl.github.io`
+> 访问链接 `https://lBetterManl.github.io`
