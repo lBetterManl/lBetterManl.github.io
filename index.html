@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>lBetterManl</title>
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
 
@@ -10,32 +12,68 @@
     <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
+    <script type="text/javascript" src="./js/myjs.js"></script>
+
 </head>
 <body>
-<div class="navbar">
-    <ul class="nav nav-pills" role="tablist">
-      <li role="presentation" class="active"><a href="#">Home</a></li>
-      <li role="presentation"><a href="#">Help</a></li>
-      <li role="presentation" class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-          Dropdown <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-</div>
-<div class="container">
-    <div class="jumbotron">
-      <h1>Hello, world!</h1>
-      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top" style="background: none;">
+            <div class="container-fluid">
+                <div class="navbar-header" style="margin-left: 80px;">
+                    <a href="#" class="navbar-brand" style="color: red;font-size: 30px;">
+                        <span class="icon-bar glyphicon glyphicon-piggy-bank"></span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-</div>
+    <div class="mainDiv">
+        <div class="container" style="padding-top:5%">
+            <div class="jumbotron coverDiv">
+                <h1>Hello, world!</h1>
+                <p>
+                    This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:2%;">
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;"></a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;"></a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;"></a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    </div>
 </body>
 </html>
