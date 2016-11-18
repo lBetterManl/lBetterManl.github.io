@@ -22,15 +22,15 @@ $(function() {
 
     //监听关闭model
     $("#myModal1").on("hidden.bs.modal",function(){
-        $("#player1").Stop();
+        $("#player1").trigger('pause');
     });
     $("#myModal2").on("hidden.bs.modal",function(){
-        $("#player2").Stop();
+        $("#player2").trigger('pause');
     });
     $("#myModal3").on("hidden.bs.modal",function(){
-        $("#player3").Stop();
+        $("#player3").trigger('pause');
     });
     $("#myModal4").on("hidden.bs.modal",function(){
-        $("#player4").Stop();
+        $("#player4").trigger('pause');
     });
 });
