@@ -12,7 +12,10 @@ $(function() {
             $("nav").css({"background":"#eee","box-shadow":"0 1px 6px #777"});
             $(".coverDiv").slideUp();
         }
-        if($(window).scrollTop() >= 2250){
+        if($(window).scrollTop() >= ($(document).height()-$(window).height())){
+            $("ul#navList>li.active").removeClass("active");
+            $("ul#navList>li").eq(4).addClass('active');
+        }else if($(window).scrollTop() >= 2250){
             $("ul#navList>li.active").removeClass("active");
             $("ul#navList>li").eq(3).addClass('active');
         }else if($(window).scrollTop() >= 800){
@@ -26,7 +29,7 @@ $(function() {
 
     $("#aBtn").click(function(){
          $("html,body").stop(true); 
-         $("html,body").animate({scrollTop:$(document).height()},6000);
+         $("html,body").animate({scrollTop:$(document).height()-$(window).height()-400},6000);
     });
 
     //导航变化
@@ -49,11 +52,14 @@ $(function() {
         if(index == 2){
             $("html,body").stop(true); 
             $("html,body").animate({scrollTop:1000},800);
-            obj.addClass('active');
         }
         if(index == 3){
             $("html,body").stop(true); 
             $("html,body").animate({scrollTop:2390},800);
+        }
+        if(index == 4){
+            $("html,body").stop(true); 
+            $("html,body").animate({scrollTop:$(document).height()-200},800);
             obj.addClass('active');
         }
 
