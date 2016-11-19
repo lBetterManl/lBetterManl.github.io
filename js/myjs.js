@@ -2,7 +2,7 @@ $(function() {
 
     //导航背景
     $(window).scroll(function(){
-        console.log($(window).scrollTop());
+        //console.log($(window).scrollTop());
         if($(window).scrollTop() <= 10){
         	$("nav").css({"background":"none","box-shadow":"none"});
             $("ul#navList>li.active").removeClass("active");
@@ -12,7 +12,11 @@ $(function() {
             $("nav").css({"background":"#eee","box-shadow":"0 1px 6px #777"});
             $(".coverDiv").slideUp();
         }
-        if($(window).scrollTop() >= 165){
+
+        if($(window).scrollTop() >= 800){
+            $("ul#navList>li.active").removeClass("active");
+            $("ul#navList>li").eq(2).addClass('active');
+        }else if($(window).scrollTop() >= 165){
             $("ul#navList>li.active").removeClass("active");
             $("ul#navList>li").eq(1).addClass('active');
         }
@@ -41,6 +45,8 @@ $(function() {
             $(".imgDiv").animate({opacity:'0.8'},"slow");
         }
         if(index == 2){
+            $("html,body").stop(true); 
+            $("html,body").animate({scrollTop:1000},800);
             obj.addClass('active');
         }
 
@@ -51,6 +57,12 @@ $(function() {
         $(this).css("opacity",1);
     },function(){
         $(this).css("opacity",0.8);
+    });
+
+    $(".schoolImg").hover(function(){
+        $(this).animate({width:'500px',height:'500px'});
+    },function(){
+        $(this).animate({width:'400px',height:'400px'});
     });
 
     //监听关闭model

@@ -28,7 +28,7 @@ html,body {
 }
 /*横线-文字-横线-方法1*/
  ul{padding:0;margin:30px auto;list-style:none;}
- ul .list1{border-bottom:1px solid #5bc0de;margin-bottom:-26px;}
+ ul .list1{border-bottom:1px solid #eee;margin-bottom:-26px;}
  ul li a{width:100%;display:block;box-sizing:border-box;padding:5px;text-align:center;text-decoration:none;cursor:default;}
  ul li a span{background:#fff;padding:0 10px;}
 .imgDiv{
@@ -36,7 +36,7 @@ html,body {
 }
 
 .cardDiv {
-    min-height: 420px;
+    min-height: 450px;
 }
 .moreBtn {
     display: block;
