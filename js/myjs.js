@@ -18,6 +18,11 @@ $(function() {
         }
     });
 
+    $("#aBtn").click(function(){
+         $("html,body").stop(true); 
+         $("html,body").animate({scrollTop:$(document).height()},6000);
+    });
+
     //导航变化
     $("ul#navList>li").click(function(){
         var obj = $(this);

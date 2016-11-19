@@ -34,3 +34,13 @@ html,body {
 .imgDiv{
     opacity: 0.8;
 }
+
+.cardDiv {
+    min-height: 420px;
+}
+.moreBtn {
+    display: block;
+    position:absolute;
+    bottom: 20px;
+    right: 25px;
+}
