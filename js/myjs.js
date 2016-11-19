@@ -12,8 +12,10 @@ $(function() {
             $("nav").css({"background":"#eee","box-shadow":"0 1px 6px #777"});
             $(".coverDiv").slideUp();
         }
-
-        if($(window).scrollTop() >= 800){
+        if($(window).scrollTop() >= 2250){
+            $("ul#navList>li.active").removeClass("active");
+            $("ul#navList>li").eq(3).addClass('active');
+        }else if($(window).scrollTop() >= 800){
             $("ul#navList>li.active").removeClass("active");
             $("ul#navList>li").eq(2).addClass('active');
         }else if($(window).scrollTop() >= 165){
@@ -47,6 +49,11 @@ $(function() {
         if(index == 2){
             $("html,body").stop(true); 
             $("html,body").animate({scrollTop:1000},800);
+            obj.addClass('active');
+        }
+        if(index == 3){
+            $("html,body").stop(true); 
+            $("html,body").animate({scrollTop:2390},800);
             obj.addClass('active');
         }
 
