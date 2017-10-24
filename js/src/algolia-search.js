@@ -13,7 +13,7 @@ $(document).ready(function () {
   }
 
   var search = instantsearch({
-    appId: algoliaSettings.appId,
+    applicationID: algoliaSettings.appId,
     apiKey: algoliaSettings.apiKey,
     indexName: algoliaSettings.indexName,
     searchFunction: function (helper) {
